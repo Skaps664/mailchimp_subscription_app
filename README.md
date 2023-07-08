@@ -20,7 +20,18 @@ public folder contains the image and css file so they can be GET successfully\
 You can change the image, placeholders and links in html files
 
 ## Use your api key
+```
+var options = {
+    url: "https://us21.api.mailchimp.com/3.0/lists/" + process.env.LIST_CODE,
+    method: "POST",
+    headers: {
+      Authorization: `auth ${process.env.AUTH_KEY}`,
+    },
+    body: jsonData,
+  };
+```
+create .env file and declare it there by: AUTH_KEY and LIST_CODE\
 generate your own mailchimp api key and place it in .env file by the name AUTH_KEY or place direclty in index.js\
-same goes for you own LIST_KEY
+same goes for you own LIST_CODE
 
 THATS ALL
