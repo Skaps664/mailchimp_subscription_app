@@ -20,7 +20,8 @@ public folder contains the image and css file so they can be GET successfully\
 You can change the image, placeholders and links in html files
 
 ## Use your api key
-```
+
+```js
 var options = {
     url: "https://us21.api.mailchimp.com/3.0/lists/" + process.env.LIST_CODE,
     method: "POST",
